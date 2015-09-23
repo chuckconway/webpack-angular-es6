@@ -1,0 +1,18 @@
+{
+    "rules": {
+        "quotes": [1, "single"],
+        "no-unused-vars": 1,
+        "semi": [2, "always"]
+    },
+    "env":{
+        "es6": true
+    },
+    "ecmaFeatures": {
+        "modules": true,
+        "blockBindings": true
+    },
+    "globals":{
+        "require":true
+    }
+    
+}
