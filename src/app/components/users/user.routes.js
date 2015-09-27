@@ -6,28 +6,6 @@ export default function routing($stateProvider) {
         url: '/user',
         controller: controller.controllerName,
         controllerAs: 'vm',
-        template: require('./user.html'),
-        authenticate: true,
-        breadcrumb: {
-            get: breadcrumb
-        }
+        template: require('./user.html')
     });
-
-    function breadcrumb() {
-        return {
-            name: '<span class="fa fa-whatsapp"></span> Leads',
-            items: [
-                {
-                    url: '/cas/#/',
-                    name: 'Leads'
-                }
-            ]
-        };
-    }
-}
-
-class Routing {
-    constructor($stateProvider) {
-        this.stateProvider = $stateProvider;
-    }
 }

@@ -1,6 +1,5 @@
 export default class Controller {
-    constructor($scope, $location) {
-
+    constructor($location, RoutingService) {
         this.text = 'chuck was here';
         this.url = $location.absUrl();
     }
