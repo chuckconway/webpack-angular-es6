@@ -1,7 +1,7 @@
 export default class Controller {
-    constructor($location, RoutingService) {
+    constructor($location) {
         this.text = 'chuck was here';
-        this.url = $location.absUrl();
+        this.url = $location.absUrl();    
     }
 
     static get controllerName() {
